@@ -1,0 +1,71 @@
+select
+	x.dailydate as 业务日期,
+    dp.departmentcode AS 事业部编码,
+    dp.department AS 事业部名称,
+    dp.parkcity  AS 城市,
+	p.SettlementCode  AS 公司编码,
+    p.settlementunit  AS 公司名称,
+	p.code AS 公园编码,
+    p.Name AS 公园名称,
+	x.storeid AS 分店编码,
+    s.Name AS 分店名称,
+	x.storeprojectcode AS 门店项目编码,
+	'自营' as 经营模式,
+	CASE s.StoreType WHEN 1 THEN '商品店' WHEN 2 THEN '餐饮店' WHEN 8 THEN '服务店' WHEN 16 THEN '体验店' ELSE CAST(s.StoreType AS CHAR) END AS 门店属性,
+	null as 分成模式,
+	x.storegoodssaletype as 销售方式,
+	null as 代售门店,
+	x.Name as 商品分类, --这个字段应该怎么取
+	categoryCode as 财务分类编码,
+	categoryName as 财务分类名称,
+	mttax.BizMatterCode AS 业务事项编码,
+    mttax.BizMatterName AS 业务事项,
+    mttax.OutputTaxRate AS 销项税率,
+	payAmount as 实收金额,
+	Round(payAmount/(1+mttax.OutputTaxRate),2) as 自营不含税收入,
+	null as 租金分成比例,
+	null as 租金税率,
+	null as 租金含税收入,
+	null as 租金不含税收入,
+	null as 管理费分成比例,
+	null as 管理费税率,
+	null as 管理费含税收入,
+	null as 管理费不含税收入,
+	Round(payAmount/(1+mttax.OutputTaxRate)) as 合计不含税收入
+from 
+(
+select 
+	sb.dailydate,
+	sb.ParkId,
+	sb.parkcode,
+	sb.parkname,
+	sb.storeprojectcode,
+	sb.storeid,
+	sd.storegoodssaletype,
+	sd.categoryid,
+	sd.categoryname,
+	sd.categoryCode,
+	sd.payAmount,
+	gc3.Name
+from ods_shop_pos_report_store_standing_book_daily_report as sb
+left join ods_shop_pos_report_store_standing_book_daily_report_detail as sd
+on sb.id = sd.id
+LEFT JOIN shop.ods_shop_pos_financialcategory as fc 
+on sd.categoryCode = fc.code AND fc.IsDeleted = 0
+LEFT JOIN shop.ods_shop_pos_financialcategorylink fcl
+on  fcl.FinancialCategoryId =fc.Id AND fc.IsDeleted = 0
+LEFT JOIN shop.ods_shop_pos_goodscategory gc3
+on gc3.Id = fcl.GoodsCategoryId
+)x
+join crossModule.dim_pub_tic_park  dp on dp.shopparkid =x.ParkId
+LEFT JOIN shop.ods_shop_pos_store s ON s.Id = x.StoreId AND s.IsDeleted = 0
+LEFT JOIN shop.ods_shop_pos_park p ON p.Id = x.ParkId AND p.IsDeleted = 0
+LEFT JOIN shop.ods_shop_pos_financialcategorylink fcl ON fcl.GoodsCategoryId = x.CategoryId AND fcl.IsDeleted = 0
+LEFT JOIN shop.ods_shop_pos_financialcategory fc ON fc.Id = fcl.FinancialCategoryId AND fc.IsDeleted = 0
+LEFT JOIN mtsharedplatform.ods_mtshare_mtsharedplatform_producttype mtprdc on mtprdc.code=fc.Code 
+LEFT JOIN mtsharedplatform.ods_mtshare_mtsharedplatform_taxmethod mttax on mttax.BizMatterCode=mtprdc.BizMatterCode
+
+
+
+
+
