@@ -1,0 +1,172 @@
+[33mcommit 3330c0ba200520334c649fe7bc586beb6ac18d4d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 21 23:17:34 2026 +0800
+
+    23:17分添加了内容
+
+[33mcommit 6df736ba9ae5daf8efa21f7848f6ba0ba322cc56[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 21 22:59:18 2026 +0800
+
+    22:59修改了内容
+
+[33mcommit 8239589c5646d7e790bb8ce86143b68a61677c65[m[33m ([m[1;32mdev[m[33m)[m
+Merge: 985f42d 57313e4
+Author: 周俊 <15914009985@163.com>
+Date:   Tue May 12 23:57:21 2026 +0800
+
+    merge conflict
+
+[33mcommit 985f42da25b70caa8a26e52dd876bf3d83c53b42[m
+Author: 周俊 <15914009985@163.com>
+Date:   Tue May 12 23:51:48 2026 +0800
+
+    main:5
+
+[33mcommit 57313e48bd4722d08b18d77ced40937447577ad3[m
+Author: 周俊 <15914009985@163.com>
+Date:   Tue May 12 23:47:04 2026 +0800
+
+    这是dev分支的提交
+
+[33mcommit 10218fccc98244569c985f4a9f3e28e1b9bf1d72[m
+Merge: 31df2b7 da5d774
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 01:12:12 2026 +0800
+
+    merge comflict
+
+[33mcommit 31df2b79ac85b94c6f6ee243dacae9be4cbcfaea[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 01:03:45 2026 +0800
+
+    main:6
+
+[33mcommit da5d774781aa926fc93b4c859ac8d6c02ee52aef[m[33m ([m[1;32mfeet[m[33m)[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 01:00:53 2026 +0800
+
+    feet:1
+
+[33mcommit f878ebb580240ea92dccaf52cc4bb278a120a041[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 00:57:02 2026 +0800
+
+    main分支修改的内容
+
+[33mcommit beeefa70c75e2e716203fcab284c5967796d20f4[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 00:55:22 2026 +0800
+
+    feet分支修改的内容
+
+[33mcommit 9e1367513f005a70018c475717038692f204d9f6[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 00:48:41 2026 +0800
+
+    提交信息
+
+[33mcommit 0089c3cd250fe4ec159ac6a9fda8447025f8a032[m
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 00:45:02 2026 +0800
+
+    提交
+
+[33mcommit d2b43c843fe4bf92488761e11540770d3b481387[m
+Merge: 3bea2c3 9a3d290
+Author: 周俊 <15914009985@163.com>
+Date:   Thu May 7 00:31:18 2026 +0800
+
+    Merge branch 'feet'
+
+[33mcommit 3bea2c33db336c25584dfe9ced3a5991dd0a9b08[m
+Author: 周俊 <15914009985@163.com>
+Date:   Tue May 5 20:10:52 2026 +0800
+
+    main:1
+
+[33mcommit 9a3d29010ad10b9159718a82073baeda340b8478[m
+Author: 周俊 <15914009985@163.com>
+Date:   Tue May 5 20:06:15 2026 +0800
+
+    feet:1
+
+[33mcommit 17d1fe8f38d913b2838f530506cca7ee01274a2a[m
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Mon Apr 27 22:51:56 2026 +0800
+
+    file5中的内容修改了
+
+[33mcommit ac95f92e5935e3c59a4b7981940982687c5a7c59[m
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Sun Apr 26 22:40:52 2026 +0800
+
+    file is modified
+
+[33mcommit 8c7364d1671ccc8ee66ebc52a9b5448cf964888c[m
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Sun Apr 26 22:04:24 2026 +0800
+
+    再次提交file1.txt
+
+[33mcommit 613872e30f896e7394e8800892d5a6f0b925f733[m
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Sun Apr 26 21:58:42 2026 +0800
+
+    删除远程 文件夹，本地不动
+
+[33mcommit 57fc59d05ad4dbda6b85153259b5c3f88898b07d[m
+Merge: 1a72f0d 25dc1a0
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Sun Apr 26 13:07:32 2026 +0800
+
+    拉取文件erge branch 'main' of github.com:zhoujun6668/Project1
+    i# Please enter a commit message to explain why this merge is necessary,
+
+[33mcommit 25dc1a0477593099ab5d6ef5da0012011be034b8[m
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Sun Apr 26 11:08:54 2026 +0800
+
+    first commit
+
+[33mcommit 1a72f0d9f828f4cef237ae781d3097f63b949dec[m
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Sun Apr 26 00:47:03 2026 +0800
+
+    这是我第二次提交
+
+[33mcommit de596dd5448ddd3c240ffab8aa8d3aad5d41a9c0[m
+Author: zhoujun <zhoujun@szhq.com>
+Date:   Sun Apr 26 00:19:35 2026 +0800
+
+    第一次提交
+
+[33mcommit e0421e3224e1ae812171907991a5b19a0a2e75b8[m
+Author: “zhoujun6668” <15914009985@163.com>
+Date:   Sat Apr 25 20:55:07 2026 +0800
+
+    清空远程仓库所有文件
+
+[33mcommit 7f0e0f14dfa337d9a2249d9b9d6892f99c0a3cfb[m
+Author: “zhoujun6668” <15914009985@163.com>
+Date:   Fri Apr 24 18:26:47 2026 +0800
+
+    first
+
+[33mcommit 62479e5844d335ec849f45e9419369cd024e0107[m
+Author: “zhoujun6668” <15914009985@163.com>
+Date:   Fri Apr 24 18:13:01 2026 +0800
+
+    第一次提交项目
+
+[33mcommit df136d5712387ecb02c2dfd54e4bd896e5216391[m
+Author: “zhoujun6668” <15914009985@163.com>
+Date:   Fri Apr 24 17:46:59 2026 +0800
+
+    第一次提交项目
+
+[33mcommit f6acb51d72bedf141ba0fbc054baa8765632574c[m
+Author: “zhoujun6668” <15914009985@163.com>
+Date:   Fri Apr 24 17:24:34 2026 +0800
+
+    first commit
